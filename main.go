@@ -48,7 +48,10 @@ func IndexPage(w http.ResponseWriter, r *http.Request) {
 
 func dataAtual() string {
 
-	t := time.Now()
+	loc, _ := time.LoadLocation("America/Sao_Paulo")
+
+
+	t := time.Now().In(loc)
 
 	s := t.Format("2006-01-02 15:04:05")
 
