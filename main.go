@@ -11,7 +11,7 @@ import (
 //Saida [é a saída de dados para o app]
 type Saida struct {
 	Datahora string `json:"datahora"`
-	Ip       string `json:"ip"`
+	IP       string `json:"ip"`
 }
 
 //IndexPage eh a IndexPage
